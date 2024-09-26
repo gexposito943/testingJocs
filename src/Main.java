@@ -1,6 +1,8 @@
 import java.time.LocalDate;
 import java.util.Set;
 
+import com.Videogames.Videogame;
+import com.Videogames.VideogamesLibrary;
 import com.users.User;
 
 public class Main {

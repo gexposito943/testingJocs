@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import com.Videogames.Videogame;
 import com.users.User;
 
 import static org.junit.jupiter.api.Assertions.*;

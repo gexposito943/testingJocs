@@ -28,18 +28,18 @@ void getName() {
 
 @Test
 void getLastName() {
-    assertEquals(user.getlastName(), "pepe");
+    assertEquals(user.getLastName(), "pepe");
 }
 
 @Test
 void getEmail() {
-    assertEquals(user.getemail(), "pepe1@example.com");
+    assertEquals(user.getEmail(), "pepe1@example.com");
 }
 
 @Test
 void getBirthDate() {
     LocalDate expectedDate = LocalDate.of(1997, 2, 4);
-    assertEquals(user.getbirthDate(), expectedDate);
+    assertEquals(user.getBirthDate(), expectedDate);
 }
 
 }

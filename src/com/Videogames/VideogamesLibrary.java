@@ -1,6 +1,8 @@
+package com.Videogames;
 import java.util.HashSet;
 import java.util.Set;
-
+import java.util.List;
+import java.util.ArrayList;
 import com.users.User;
 
 public class VideogamesLibrary {
@@ -27,6 +29,30 @@ public class VideogamesLibrary {
             }
         }
         return videogameFound;
+    }
+
+    public void addGame(Videogame game) {
+        videogames.add(game);
+    }
+
+    public List<Videogame> searchByCategory(String category) {
+        List<Videogame> result = new ArrayList<>();
+        for (Videogame game : videogames) {
+            if (game.getGenre().equalsIgnoreCase(category)) {
+                result.add(game);
+            }
+        }
+        return result;
+    }
+
+    public List<Videogame> searchByPlatform(String platform) {
+        List<Videogame> result = new ArrayList<>();
+        for (Videogame game : videogames) {
+            if (game.getPlatforms().toLowerCase().contains(platform.toLowerCase())) {
+                result.add(game);
+            }
+        }
+        return result;
     }
 
     private void createInitialVideogames() {

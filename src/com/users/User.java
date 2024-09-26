@@ -1,4 +1,5 @@
 package com.users;
+
 import java.time.LocalDate;
 
 public class User {
@@ -9,14 +10,15 @@ public class User {
     private String lastName;
     private String email;
     private LocalDate birthDate;
+   
     
-    public User(String nickname, String name, String lastName, String email, LocalDate birthDate) {
+    public User(String nickname, String firstName, String lastName, String email, LocalDate birthdate) {
         this.nickname = nickname;
-        this.name = name;
+        this.name = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.birthDate = birthDate;
-
+        this.birthDate = birthdate;
+       
         lastId++;
         this.id = lastId;
     }
@@ -30,18 +32,14 @@ public class User {
     public String getName() {
         return name;
     }
-    public String getlastName() {
+    public String getLastName() {
         return lastName;
     }
-    public String getemail() {
+    public String getEmail() {
         return email;
     }
-    public LocalDate getbirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
-
-
-
-    
     
 }
